@@ -1,12 +1,27 @@
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 Note to self:
+
+
+VIRTUAL ENVIRONMENT
 
 § virtualenv --no-site-packages ~/.nameofvirtualenv
 
 § source ~/.nameofvirtualenv/bin/activate
 
-(.spreads4)simon@Simons-Ubuntu:~$ unzip chdkptp-r468-Linux-x86_64.zip -d usr/local/lib/chdkptp
+
+CHDKPTP FOR UBUNTU X86 and X64
+
+1. Remove old
+§ sudo rm -rf /usr/local/lib/chdkptp
+
+2. Download
+§ wget --continue https://www.assembla.com/spaces/chdkptp/documents/acLgv2yhOr44ksacwqjQWU/download/acLgv2yhOr44ksacwqjQWU -O /tmp/chdkptp.zip
+
+3. Unzip then remove
+§ sudo unzip -d /usr/local/lib/chdkptp /tmp/chdkptp.zip
+
+§ rm -rf /tmp/chdkptp.zip
+
+
 
 (.spreads4)simon@Simons-Ubuntu:~$ pip install stevedore==0.13 futures==2.1.4 jpegtran-cffi==0.3.1
 
