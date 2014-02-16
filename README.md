@@ -1,6 +1,7 @@
 Note to self: 
 
 § virtualenv --no-site-packages ~/.nameofvirtualenv
+
 § source ~/.nameofvirtualenv/bin/activate
 (.spreads4)simon@Simons-Ubuntu:~$ unzip chdkptp-r468-Linux-x86_64.zip -d usr/local/lib/chdkptp
 (.spreads4)simon@Simons-Ubuntu:~$ pip install stevedore==0.13 futures==2.1.4 jpegtran-cffi==0.3.1
