@@ -1,9 +1,10 @@
 Installation following: https://github.com/DIYBookScanner/spreadpi/blob/master/delivery/scripts/10-spreads.sh
 
-virtualenv is not included in installation instructions. had to:
+git was not installed. Had to
 
+§ sudo apt-get install git
 
-As this needs pip i had to start with
+virtualenv is not included in installation instructions. Started out with the following to be able to install virtualenv.
 
 § sudo apt-get -y install build-essential cython libffi-dev libjpeg8-dev liblua5.1-0\
 >             libudev-dev libusb-1.0-0-dev libusb-dev nginx python2.7-dev\
@@ -74,22 +75,18 @@ ImportError: No module named Cython.Distutils
 
 Above fails: cp: cannot stat `/files/config.yaml': No such file or directory 
 
-Skipping
+Skipping to following:
 
 § cp $DELIVERY_DIR/files/spread /etc/init.d/spread 
 
 Above fails: cp: cannot stat `/files/spread': No such file or directory
 . skipping to install spreads init script. 
 
-Skipping
 
 
 
 
 
-git was not installed. Had to
-
-§ sudo apt-get install git
 
 
 I tried without sudo, but i needed sudo for every line in which it is noted. 
