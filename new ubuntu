@@ -1,227 +1,367 @@
-kampsnigel@nya-datorn-ubuntu:~$ pip install virtualenv
-The program 'pip' is currently not installed.  You can install it by typing:
-sudo apt-get install python-pip
-kampsnigel@nya-datorn-ubuntu:~$ apt-get -y install build-essential cython libffi-dev libjpeg8-dev liblua5.1-0\
->             libudev-dev libusb-1.0-0-dev libusb-dev nginx python2.7-dev\
->             python-pyexiv2 python-netifaces python-pip python-yaml unzip
+creating build/lib.linux-x86_64-2.7/virtualenv_support
+
+copying virtualenv_support/__init__.py -> build/lib.linux-x86_64-2.7/virtualenv_support
+
+copying virtualenv_support/pip-1.5.2-py2.py3-none-any.whl -> build/lib.linux-x86_64-2.7/virtualenv_support
+
+copying virtualenv_support/setuptools-2.1-py2.py3-none-any.whl -> build/lib.linux-x86_64-2.7/virtualenv_support
+
+running install_lib
+
+creating /usr/local/lib/python2.7/dist-packages/virtualenv_support
+
+error: could not create '/usr/local/lib/python2.7/dist-packages/virtualenv_support': Permission denied
+
+----------------------------------------
+Command /usr/bin/python -c "import setuptools;__file__='/home/kampsnigel/build/virtualenv/setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-_b3iaI-record/install-record.txt failed with error code 1
+Storing complete log in /home/kampsnigel/.pip/pip.log
+kampsnigel@nya-datorn-ubuntu:~$ sudo pip install virtualenv
+Downloading/unpacking virtualenv
+  Running setup.py egg_info for package virtualenv
+    
+    warning: no previously-included files matching '*' found under directory 'docs/_templates'
+    warning: no previously-included files matching '*' found under directory 'docs/_build'
+Installing collected packages: virtualenv
+  Running setup.py install for virtualenv
+    
+    warning: no previously-included files matching '*' found under directory 'docs/_templates'
+    warning: no previously-included files matching '*' found under directory 'docs/_build'
+    Installing virtualenv script to /usr/local/bin
+    Installing virtualenv-2.7 script to /usr/local/bin
+Successfully installed virtualenv
+Cleaning up...
+kampsnigel@nya-datorn-ubuntu:~$ virtualenv --no-site-packages ~/.venv1
+New python executable in /home/kampsnigel/.venv1/bin/python
+Installing setuptools, pip...done.
+kampsnigel@nya-datorn-ubuntu:~$ source ~/.venv1/bin/activate
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ wget --continue https://www.assembla.com/spaces/chdkptp/documents/aDDsvQyhOr465JacwqjQYw/download/aDDsvQyhOr465JacwqjQYw -O /tmp/chdkptp.zip
+--2014-02-16 13:30:09--  https://www.assembla.com/spaces/chdkptp/documents/aDDsvQyhOr465JacwqjQYw/download/aDDsvQyhOr465JacwqjQYw
+Resolving www.assembla.com (www.assembla.com)... 93.184.219.81
+Connecting to www.assembla.com (www.assembla.com)|93.184.219.81|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 230046 (225K) [application/zip]
+Saving to: `/tmp/chdkptp.zip'
+
+100%[=======================================>] 230,046      312K/s   in 0.7s    
+
+2014-02-16 13:30:10 (312 KB/s) - `/tmp/chdkptp.zip' saved [230046/230046]
+
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ unzip -d /usr/local/lib/chdkptp /tmp/chdkptp.zip
+Archive:  /tmp/chdkptp.zip
+checkdir:  cannot create extraction directory: /usr/local/lib/chdkptp
+           Permission denied
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ sudo unzip -d /usr/local/lib/chdkptp /tmp/chdkptp.zip
+Archive:  /tmp/chdkptp.zip
+  inflating: /usr/local/lib/chdkptp/chdkptp  
+  inflating: /usr/local/lib/chdkptp/chdkptp_gui  
+  inflating: /usr/local/lib/chdkptp/chdkptp-sample.sh  
+  inflating: /usr/local/lib/chdkptp/lua/chdku.lua  
+  inflating: /usr/local/lib/chdkptp/lua/cli.lua  
+  inflating: /usr/local/lib/chdkptp/lua/dngcli.lua  
+  inflating: /usr/local/lib/chdkptp/lua/dng.lua  
+  inflating: /usr/local/lib/chdkptp/lua/exposure.lua  
+  inflating: /usr/local/lib/chdkptp/lua/fsutil.lua  
+  inflating: /usr/local/lib/chdkptp/lua/gui_icon.lua  
+  inflating: /usr/local/lib/chdkptp/lua/gui_live.lua  
+  inflating: /usr/local/lib/chdkptp/lua/gui_live_stats.lua  
+  inflating: /usr/local/lib/chdkptp/lua/gui.lua  
+  inflating: /usr/local/lib/chdkptp/lua/gui_tree.lua  
+  inflating: /usr/local/lib/chdkptp/lua/gui_user.lua  
+  inflating: /usr/local/lib/chdkptp/lua/lbufutil.lua  
+  inflating: /usr/local/lib/chdkptp/lua/main.lua  
+  inflating: /usr/local/lib/chdkptp/lua/multicam.lua  
+  inflating: /usr/local/lib/chdkptp/lua/prefs.lua  
+  inflating: /usr/local/lib/chdkptp/lua/rlibs.lua  
+  inflating: /usr/local/lib/chdkptp/lua/tests.lua  
+  inflating: /usr/local/lib/chdkptp/lua/ustime.lua  
+  inflating: /usr/local/lib/chdkptp/lua/util.lua  
+  inflating: /usr/local/lib/chdkptp/lua/extras/dbgdump.lua  
+  inflating: /usr/local/lib/chdkptp/lua/extras/dcimdl.lua  
+  inflating: /usr/local/lib/chdkptp/lua/extras/hackcfa.lua  
+  inflating: /usr/local/lib/chdkptp/lua/extras/msgtest.lua  
+  inflating: /usr/local/lib/chdkptp/lua/extras/simplemulticam.lua  
+  inflating: /usr/local/lib/chdkptp/lua/extras/vxromlog.lua  
+  inflating: /usr/local/lib/chdkptp/lua/extras/vxtcbdump.lua  
+  inflating: /usr/local/lib/chdkptp/README.TXT  
+  inflating: /usr/local/lib/chdkptp/USAGE.TXT  
+  inflating: /usr/local/lib/chdkptp/COPYING  
+  inflating: /usr/local/lib/chdkptp/THANKS.TXT  
+  inflating: /usr/local/lib/chdkptp/README-RASPI.TXT  
+  inflating: /usr/local/lib/chdkptp/README-RASPI-LIBS.TXT  
+  inflating: /usr/local/lib/chdkptp/README-OSX.TXT  
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ rm -rf /tmp/chdkptp.zip
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ pip install --upgrade pip
+Requirement already up-to-date: pip in ./.venv1/lib/python2.7/site-packages
+Cleaning up...
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ mv /usr/bin/pip /usr/bin/pip.old
+mv: cannot move `/usr/bin/pip' to `/usr/bin/pip.old': Permission denied
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ ln -s /usr/local/bin/pip /usr/bin/pip
+ln: failed to create symbolic link `/usr/bin/pip': File exists
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ pip --version
+pip 1.5.2 from /home/kampsnigel/.venv1/local/lib/python2.7/site-packages (python 2.7)
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ pip install cffi
+Downloading/unpacking cffi
+  Downloading cffi-0.8.1.tar.gz (195kB): 195kB downloaded
+  Running setup.py (path:/home/kampsnigel/.venv1/build/cffi/setup.py) egg_info for package cffi
+    
+Downloading/unpacking pycparser (from cffi)
+  Downloading pycparser-2.10.tar.gz (206kB): 206kB downloaded
+  Running setup.py (path:/home/kampsnigel/.venv1/build/pycparser/setup.py) egg_info for package pycparser
+    
+Installing collected packages: cffi, pycparser
+  Running setup.py install for cffi
+    building '_cffi_backend' extension
+    gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DUSE__THREAD -I/usr/include/python2.7 -c c/_cffi_backend.c -o build/temp.linux-x86_64-2.7/c/_cffi_backend.o
+    gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro build/temp.linux-x86_64-2.7/c/_cffi_backend.o -lffi -o build/lib.linux-x86_64-2.7/_cffi_backend.so
+    
+  Running setup.py install for pycparser
+    
+Successfully installed cffi pycparser
+Cleaning up...
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ git clone https://github.com/jbaiter/spreads.git /usr/src/spreads
+The program 'git' is currently not installed.  You can install it by typing:
+sudo apt-get install git
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ apt-get install git
 E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
 E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
-kampsnigel@nya-datorn-ubuntu:~$ sudo apt-get -y install build-essential cython libffi-dev libjpeg8-dev liblua5.1-0\
->             libudev-dev libusb-1.0-0-dev libusb-dev nginx python2.7-dev\
->             python-pyexiv2 python-netifaces python-pip python-yaml unzip
-[sudo] password for kampsnigel: 
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ sudo apt-get install git
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
-liblua5.1-0 is already the newest version.
-liblua5.1-0 set to manually installed.
 The following package was automatically installed and is no longer required:
   thunderbird-globalmenu
 Use 'apt-get autoremove' to remove them.
 The following extra packages will be installed:
-  dpkg-dev fakeroot g++ g++-4.6 libalgorithm-diff-perl
-  libalgorithm-diff-xs-perl libalgorithm-merge-perl libboost-python1.46.1
-  libdpkg-perl libexpat1-dev libjpeg-turbo8 libjpeg-turbo8-dev libpython2.7
-  libssl-dev libssl-doc libssl1.0.0 libstdc++6-4.6-dev libtimedate-perl
-  libyaml-0-2 nginx-common nginx-full python-pyexiv2-doc python-setuptools
-  python-support python2.7 python2.7-minimal zlib1g-dev
+  git-man liberror-perl
 Suggested packages:
-  python-dev debian-keyring g++-multilib g++-4.6-multilib gcc-4.6-doc
-  libstdc++6-4.6-dbg python3 libstdc++6-4.6-doc python2.7-doc binfmt-support
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-arch git-cvs git-svn
+  git-email git-gui gitk gitweb
 The following NEW packages will be installed:
-  build-essential cython dpkg-dev fakeroot g++ g++-4.6 libalgorithm-diff-perl
-  libalgorithm-diff-xs-perl libalgorithm-merge-perl libboost-python1.46.1
-  libdpkg-perl libexpat1-dev libffi-dev libjpeg-turbo8-dev libjpeg8-dev
-  libssl-dev libssl-doc libstdc++6-4.6-dev libtimedate-perl libudev-dev
-  libusb-1.0-0-dev libusb-dev libyaml-0-2 nginx nginx-common nginx-full
-  python-netifaces python-pip python-pyexiv2 python-pyexiv2-doc
-  python-setuptools python-support python-yaml python2.7-dev zlib1g-dev
-The following packages will be upgraded:
-  libjpeg-turbo8 libpython2.7 libssl1.0.0 python2.7 python2.7-minimal unzip
-6 upgraded, 35 newly installed, 0 to remove and 254 not upgraded.
-Need to get 45.7 MB/52.5 MB of archives.
-After this operation, 90.1 MB of additional disk space will be used.
-Get:1 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main libyaml-0-2 amd64 0.1.4-2ubuntu0.12.04.2 [57.5 kB]
-Get:2 http://se.archive.ubuntu.com/ubuntu/ precise/main libstdc++6-4.6-dev amd64 4.6.3-1ubuntu5 [1,660 kB]
-Get:3 http://se.archive.ubuntu.com/ubuntu/ precise/main g++-4.6 amd64 4.6.3-1ubuntu5 [6,954 kB]
-Get:4 http://se.archive.ubuntu.com/ubuntu/ precise/main g++ amd64 4:4.6.3-1ubuntu5 [1,442 B]
-Get:5 http://se.archive.ubuntu.com/ubuntu/ precise/main libtimedate-perl all 1.2000-1 [41.6 kB]
-Get:6 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main libdpkg-perl all 1.16.1.2ubuntu7.2 [180 kB]
-Get:7 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main dpkg-dev all 1.16.1.2ubuntu7.2 [469 kB]
-Get:8 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main build-essential amd64 11.5ubuntu2.1 [5,816 B]
-Get:9 http://se.archive.ubuntu.com/ubuntu/ precise/universe python-support all 1.0.14ubuntu2 [26.1 kB]
-Get:10 http://se.archive.ubuntu.com/ubuntu/ precise/universe cython amd64 0.15.1-1ubuntu1 [1,220 kB]
-Get:11 http://se.archive.ubuntu.com/ubuntu/ precise/main fakeroot amd64 1.18.2-1 [87.2 kB]
-Get:12 http://se.archive.ubuntu.com/ubuntu/ precise/main libalgorithm-diff-perl all 1.19.02-2 [50.7 kB]
-Get:13 http://se.archive.ubuntu.com/ubuntu/ precise/main libalgorithm-diff-xs-perl amd64 0.04-2build2 [12.4 kB]
-Get:14 http://se.archive.ubuntu.com/ubuntu/ precise/main libalgorithm-merge-perl all 0.08-2 [12.7 kB]
-Get:15 http://se.archive.ubuntu.com/ubuntu/ precise/main libboost-python1.46.1 amd64 1.46.1-7ubuntu3 [226 kB]
-Get:16 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main libexpat1-dev amd64 2.0.1-7.2ubuntu1.1 [216 kB]
-Get:17 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main libjpeg-turbo8-dev amd64 1.1.90+svn733-0ubuntu4.3 [391 kB]
-Get:18 http://se.archive.ubuntu.com/ubuntu/ precise/main libjpeg8-dev amd64 8c-2ubuntu7 [1,544 B]
-Get:19 http://se.archive.ubuntu.com/ubuntu/ precise/main zlib1g-dev amd64 1:1.2.3.4.dfsg-3ubuntu4 [165 kB]
-Get:20 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main libssl-dev amd64 1.0.1-4ubuntu5.11 [1,574 kB]
-Get:21 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main libssl-doc all 1.0.1-4ubuntu5.11 [1,034 kB]
-Get:22 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main libudev-dev amd64 175-0ubuntu9.4 [62.8 kB]
-Get:23 http://se.archive.ubuntu.com/ubuntu/ precise/main libusb-1.0-0-dev amd64 2:1.0.9~rc3-2ubuntu1 [158 kB]
-Get:24 http://se.archive.ubuntu.com/ubuntu/ precise/main libusb-dev amd64 2:0.1.12-20 [35.0 kB]
-Get:25 http://se.archive.ubuntu.com/ubuntu/ precise-updates/universe nginx-common all 1.1.19-1ubuntu0.6 [17.0 kB]
-Get:26 http://se.archive.ubuntu.com/ubuntu/ precise-updates/universe nginx-full amd64 1.1.19-1ubuntu0.6 [379 kB]
-Get:27 http://se.archive.ubuntu.com/ubuntu/ precise-updates/universe nginx all 1.1.19-1ubuntu0.6 [5,886 B]
-Get:28 http://se.archive.ubuntu.com/ubuntu/ precise/main python-netifaces amd64 0.6-2ubuntu1 [12.3 kB]
-Get:29 http://se.archive.ubuntu.com/ubuntu/ precise/main python-setuptools all 0.6.24-1ubuntu1 [441 kB]
-Get:30 http://se.archive.ubuntu.com/ubuntu/ precise/universe python-pip all 1.0-1build1 [95.1 kB]
-Get:31 http://se.archive.ubuntu.com/ubuntu/ precise/universe python-pyexiv2 amd64 0.3.2-1 [99.5 kB]
-Get:32 http://se.archive.ubuntu.com/ubuntu/ precise/universe python-pyexiv2-doc all 0.3.2-1 [89.7 kB]
-Get:33 http://se.archive.ubuntu.com/ubuntu/ precise/main python-yaml amd64 3.10-2 [122 kB]
-Get:34 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main python2.7-dev amd64 2.7.3-0ubuntu3.4 [29.5 MB]
-Get:35 http://se.archive.ubuntu.com/ubuntu/ precise-updates/main unzip amd64 6.0-4ubuntu2 [193 kB]
-Get:36 http://se.archive.ubuntu.com/ubuntu/ precise/main libffi-dev amd64 3.0.11~rc1-5 [96.1 kB]
-Fetched 45.7 MB in 5s (8,305 kB/s) 
-Extracting templates from packages: 100%
-Preconfiguring packages ...
-(Reading database ... 143232 files and directories currently installed.)
-Preparing to replace libssl1.0.0 1.0.1-4ubuntu5.10 (using .../libssl1.0.0_1.0.1-4ubuntu5.11_amd64.deb) ...
-Unpacking replacement libssl1.0.0 ...
-Setting up libssl1.0.0 (1.0.1-4ubuntu5.11) ...
-Processing triggers for libc-bin ...
-ldconfig deferred processing now taking place
-(Reading database ... 143232 files and directories currently installed.)
-Preparing to replace libjpeg-turbo8 1.1.90+svn733-0ubuntu4.1 (using .../libjpeg-turbo8_1.1.90+svn733-0ubuntu4.3_amd64.deb) ...
-Unpacking replacement libjpeg-turbo8 ...
-Selecting previously unselected package libyaml-0-2.
-Unpacking libyaml-0-2 (from .../libyaml-0-2_0.1.4-2ubuntu0.12.04.2_amd64.deb) ...
-Preparing to replace libpython2.7 2.7.3-0ubuntu3.2 (using .../libpython2.7_2.7.3-0ubuntu3.4_amd64.deb) ...
-Unpacking replacement libpython2.7 ...
-Preparing to replace python2.7 2.7.3-0ubuntu3.2 (using .../python2.7_2.7.3-0ubuntu3.4_amd64.deb) ...
-Unpacking replacement python2.7 ...
-Preparing to replace python2.7-minimal 2.7.3-0ubuntu3.2 (using .../python2.7-minimal_2.7.3-0ubuntu3.4_amd64.deb) ...
-Unpacking replacement python2.7-minimal ...
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 254 not upgraded.
+Need to get 6,741 kB of archives.
+After this operation, 15.2 MB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+Get:1 http://se.archive.ubuntu.com/ubuntu/ precise/main liberror-perl all 0.17-1 [23.8 kB]
+Get:2 http://se.archive.ubuntu.com/ubuntu/ precise/main git-man all 1:1.7.9.5-1 [630 kB]
+Get:3 http://se.archive.ubuntu.com/ubuntu/ precise/main git amd64 1:1.7.9.5-1 [6,087 kB]
+Fetched 6,741 kB in 0s (7,623 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 146838 files and directories currently installed.)
+Unpacking liberror-perl (from .../liberror-perl_0.17-1_all.deb) ...
+Selecting previously unselected package git-man.
+Unpacking git-man (from .../git-man_1%3a1.7.9.5-1_all.deb) ...
+Selecting previously unselected package git.
+Unpacking git (from .../git_1%3a1.7.9.5-1_amd64.deb) ...
 Processing triggers for man-db ...
-Processing triggers for desktop-file-utils ...
-Processing triggers for bamfdaemon ...
-Rebuilding /usr/share/applications/bamf.index...
-Processing triggers for gnome-menus ...
-Setting up python2.7-minimal (2.7.3-0ubuntu3.4) ...
-Selecting previously unselected package libstdc++6-4.6-dev.
-(Reading database ... 143238 files and directories currently installed.)
-Unpacking libstdc++6-4.6-dev (from .../libstdc++6-4.6-dev_4.6.3-1ubuntu5_amd64.deb) ...
-Selecting previously unselected package g++-4.6.
-Unpacking g++-4.6 (from .../g++-4.6_4.6.3-1ubuntu5_amd64.deb) ...
-Selecting previously unselected package g++.
-Unpacking g++ (from .../g++_4%3a4.6.3-1ubuntu5_amd64.deb) ...
-Selecting previously unselected package libtimedate-perl.
-Unpacking libtimedate-perl (from .../libtimedate-perl_1.2000-1_all.deb) ...
-Selecting previously unselected package libdpkg-perl.
-Unpacking libdpkg-perl (from .../libdpkg-perl_1.16.1.2ubuntu7.2_all.deb) ...
-Selecting previously unselected package dpkg-dev.
-Unpacking dpkg-dev (from .../dpkg-dev_1.16.1.2ubuntu7.2_all.deb) ...
-Selecting previously unselected package build-essential.
-Unpacking build-essential (from .../build-essential_11.5ubuntu2.1_amd64.deb) ...
-Selecting previously unselected package python-support.
-Unpacking python-support (from .../python-support_1.0.14ubuntu2_all.deb) ...
-Selecting previously unselected package cython.
-Unpacking cython (from .../cython_0.15.1-1ubuntu1_amd64.deb) ...
-Selecting previously unselected package fakeroot.
-Unpacking fakeroot (from .../fakeroot_1.18.2-1_amd64.deb) ...
-Selecting previously unselected package libalgorithm-diff-perl.
-Unpacking libalgorithm-diff-perl (from .../libalgorithm-diff-perl_1.19.02-2_all.deb) ...
-Selecting previously unselected package libalgorithm-diff-xs-perl.
-Unpacking libalgorithm-diff-xs-perl (from .../libalgorithm-diff-xs-perl_0.04-2build2_amd64.deb) ...
-Selecting previously unselected package libalgorithm-merge-perl.
-Unpacking libalgorithm-merge-perl (from .../libalgorithm-merge-perl_0.08-2_all.deb) ...
-Selecting previously unselected package libboost-python1.46.1.
-Unpacking libboost-python1.46.1 (from .../libboost-python1.46.1_1.46.1-7ubuntu3_amd64.deb) ...
-Selecting previously unselected package libexpat1-dev.
-Unpacking libexpat1-dev (from .../libexpat1-dev_2.0.1-7.2ubuntu1.1_amd64.deb) ...
-Selecting previously unselected package libjpeg-turbo8-dev.
-Unpacking libjpeg-turbo8-dev (from .../libjpeg-turbo8-dev_1.1.90+svn733-0ubuntu4.3_amd64.deb) ...
-Selecting previously unselected package libjpeg8-dev.
-Unpacking libjpeg8-dev (from .../libjpeg8-dev_8c-2ubuntu7_amd64.deb) ...
-Selecting previously unselected package zlib1g-dev.
-Unpacking zlib1g-dev (from .../zlib1g-dev_1%3a1.2.3.4.dfsg-3ubuntu4_amd64.deb) ...
-Selecting previously unselected package libssl-dev.
-Unpacking libssl-dev (from .../libssl-dev_1.0.1-4ubuntu5.11_amd64.deb) ...
-Selecting previously unselected package libssl-doc.
-Unpacking libssl-doc (from .../libssl-doc_1.0.1-4ubuntu5.11_all.deb) ...
-Selecting previously unselected package libudev-dev.
-Unpacking libudev-dev (from .../libudev-dev_175-0ubuntu9.4_amd64.deb) ...
-Selecting previously unselected package libusb-1.0-0-dev.
-Unpacking libusb-1.0-0-dev (from .../libusb-1.0-0-dev_2%3a1.0.9~rc3-2ubuntu1_amd64.deb) ...
-Selecting previously unselected package libusb-dev.
-Unpacking libusb-dev (from .../libusb-dev_2%3a0.1.12-20_amd64.deb) ...
-Selecting previously unselected package nginx-common.
-Unpacking nginx-common (from .../nginx-common_1.1.19-1ubuntu0.6_all.deb) ...
-Selecting previously unselected package nginx-full.
-Unpacking nginx-full (from .../nginx-full_1.1.19-1ubuntu0.6_amd64.deb) ...
-Selecting previously unselected package nginx.
-Unpacking nginx (from .../nginx_1.1.19-1ubuntu0.6_all.deb) ...
-Selecting previously unselected package python-netifaces.
-Unpacking python-netifaces (from .../python-netifaces_0.6-2ubuntu1_amd64.deb) ...
-Selecting previously unselected package python-setuptools.
-Unpacking python-setuptools (from .../python-setuptools_0.6.24-1ubuntu1_all.deb) ...
-Selecting previously unselected package python-pip.
-Unpacking python-pip (from .../python-pip_1.0-1build1_all.deb) ...
-Selecting previously unselected package python-pyexiv2.
-Unpacking python-pyexiv2 (from .../python-pyexiv2_0.3.2-1_amd64.deb) ...
-Selecting previously unselected package python-pyexiv2-doc.
-Unpacking python-pyexiv2-doc (from .../python-pyexiv2-doc_0.3.2-1_all.deb) ...
-Selecting previously unselected package python-yaml.
-Unpacking python-yaml (from .../python-yaml_3.10-2_amd64.deb) ...
-Selecting previously unselected package python2.7-dev.
-Unpacking python2.7-dev (from .../python2.7-dev_2.7.3-0ubuntu3.4_amd64.deb) ...
-Preparing to replace unzip 6.0-4ubuntu1 (using .../unzip_6.0-4ubuntu2_amd64.deb) ...
-Unpacking replacement unzip ...
-Selecting previously unselected package libffi-dev.
-Unpacking libffi-dev (from .../libffi-dev_3.0.11~rc1-5_amd64.deb) ...
-Processing triggers for man-db ...
-Processing triggers for doc-base ...
-Processing 29 changed doc-base files, 5 added doc-base files...
-Processing triggers for ufw ...
-Processing triggers for ureadahead ...
-Processing triggers for install-info ...
-Setting up libjpeg-turbo8 (1.1.90+svn733-0ubuntu4.3) ...
-Setting up libyaml-0-2 (0.1.4-2ubuntu0.12.04.2) ...
-Setting up python2.7 (2.7.3-0ubuntu3.4) ...
-Setting up libpython2.7 (2.7.3-0ubuntu3.4) ...
-Setting up libtimedate-perl (1.2000-1) ...
-Setting up libdpkg-perl (1.16.1.2ubuntu7.2) ...
-Setting up dpkg-dev (1.16.1.2ubuntu7.2) ...
-Setting up python-support (1.0.14ubuntu2) ...
-Setting up cython (0.15.1-1ubuntu1) ...
-Setting up fakeroot (1.18.2-1) ...
-update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode.
-Setting up libalgorithm-diff-perl (1.19.02-2) ...
-Setting up libalgorithm-diff-xs-perl (0.04-2build2) ...
-Setting up libalgorithm-merge-perl (0.08-2) ...
-Setting up libboost-python1.46.1 (1.46.1-7ubuntu3) ...
-Setting up libexpat1-dev (2.0.1-7.2ubuntu1.1) ...
-Setting up libjpeg-turbo8-dev (1.1.90+svn733-0ubuntu4.3) ...
-Setting up libjpeg8-dev (8c-2ubuntu7) ...
-Setting up zlib1g-dev (1:1.2.3.4.dfsg-3ubuntu4) ...
-Setting up libssl-dev (1.0.1-4ubuntu5.11) ...
-Setting up libssl-doc (1.0.1-4ubuntu5.11) ...
-Setting up libudev-dev (175-0ubuntu9.4) ...
-Setting up libusb-1.0-0-dev (2:1.0.9~rc3-2ubuntu1) ...
-Setting up libusb-dev (2:0.1.12-20) ...
-Setting up nginx-common (1.1.19-1ubuntu0.6) ...
-Setting up nginx-full (1.1.19-1ubuntu0.6) ...
-Setting up nginx (1.1.19-1ubuntu0.6) ...
-Setting up python-netifaces (0.6-2ubuntu1) ...
-Setting up python-setuptools (0.6.24-1ubuntu1) ...
-Setting up python-pip (1.0-1build1) ...
-Setting up python-pyexiv2 (0.3.2-1) ...
-Setting up python-pyexiv2-doc (0.3.2-1) ...
-Setting up python-yaml (3.10-2) ...
-Setting up python2.7-dev (2.7.3-0ubuntu3.4) ...
-Setting up unzip (6.0-4ubuntu2) ...
-Setting up libffi-dev (3.0.11~rc1-5) ...
-Setting up libstdc++6-4.6-dev (4.6.3-1ubuntu5) ...
-Setting up g++-4.6 (4.6.3-1ubuntu5) ...
-Setting up g++ (4:4.6.3-1ubuntu5) ...
-update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode.
-Setting up build-essential (11.5ubuntu2.1) ...
-Processing triggers for libc-bin ...
-ldconfig deferred processing now taking place
-Processing triggers for python-support ...
-kampsnigel@nya-datorn-ubuntu:~$ 
+Setting up liberror-perl (0.17-1) ...
+Setting up git-man (1:1.7.9.5-1) ...
+Setting up git (1:1.7.9.5-1) ...
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ ^C
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ ^C
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ git clone https://github.com/jbaiter/spreads.git /usr/src/spreads
+fatal: could not create work tree dir '/usr/src/spreads'.: Permission denied
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ sudo git clone https://github.com/jbaiter/spreads.git /usr/src/spreads
+Cloning into '/usr/src/spreads'...
+remote: Counting objects: 2927, done.
+remote: Compressing objects: 100% (1078/1078), done.
+remote: Total 2927 (delta 1841), reused 2911 (delta 1828)
+Receiving objects: 100% (2927/2927), 10.81 MiB | 1.07 MiB/s, done.
+Resolving deltas: 100% (1841/1841), done.
+(.venv1)kampsnigel@nya-datorn-ubuntu:~$ cd /usr/src/spreads
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ git checkout webplugin
+fatal: Unable to create '/usr/src/spreads/.git/index.lock': Permission denied
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ sudo git checkout webplugin
+Branch webplugin set up to track remote branch webplugin from origin.
+Switched to a new branch 'webplugin'
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ pip install --pre pyusb
+Downloading/unpacking pyusb
+  Downloading pyusb-1.0.0b1.tar.gz (44kB): 44kB downloaded
+  Running setup.py (path:/home/kampsnigel/.venv1/build/pyusb/setup.py) egg_info for package pyusb
+    
+Installing collected packages: pyusb
+  Running setup.py install for pyusb
+    
+Successfully installed pyusb
+Cleaning up...
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ pip install colorama futures flask flask-compress zipstream \
+> waitress requests jpegtran-cffi
+Downloading/unpacking colorama
+  Downloading colorama-0.2.7.tar.gz
+  Running setup.py (path:/home/kampsnigel/.venv1/build/colorama/setup.py) egg_info for package colorama
+    
+Downloading/unpacking futures
+  Downloading futures-2.1.6-py2.py3-none-any.whl
+Downloading/unpacking flask
+  Downloading Flask-0.10.1.tar.gz (544kB): 544kB downloaded
+  Running setup.py (path:/home/kampsnigel/.venv1/build/flask/setup.py) egg_info for package flask
+    
+    warning: no files found matching '*' under directory 'tests'
+    warning: no previously-included files matching '*.pyc' found under directory 'docs'
+    warning: no previously-included files matching '*.pyo' found under directory 'docs'
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'
+    warning: no previously-included files matching '*.pyo' found under directory 'tests'
+    warning: no previously-included files matching '*.pyc' found under directory 'examples'
+    warning: no previously-included files matching '*.pyo' found under directory 'examples'
+    no previously-included directories found matching 'docs/_build'
+    no previously-included directories found matching 'docs/_themes/.git'
+Downloading/unpacking flask-compress
+  Downloading Flask-Compress-1.0.0.tar.gz
+  Running setup.py (path:/home/kampsnigel/.venv1/build/flask-compress/setup.py) egg_info for package flask-compress
+    
+Downloading/unpacking zipstream
+  Downloading zipstream-1.0.2.tar.gz
+  Running setup.py (path:/home/kampsnigel/.venv1/build/zipstream/setup.py) egg_info for package zipstream
+    
+Downloading/unpacking waitress
+  Downloading waitress-0.8.8.tar.gz (119kB): 119kB downloaded
+  Running setup.py (path:/home/kampsnigel/.venv1/build/waitress/setup.py) egg_info for package waitress
+    
+Downloading/unpacking requests
+  Downloading requests-2.2.1-py2.py3-none-any.whl (625kB): 625kB downloaded
+Downloading/unpacking jpegtran-cffi
+  Downloading jpegtran-cffi-0.4.tar.gz (50kB): 50kB downloaded
+  Running setup.py (path:/home/kampsnigel/.venv1/build/jpegtran-cffi/setup.py) egg_info for package jpegtran-cffi
+    src/epeg_private.h:71:17: warning: ‘_jpeg_init_source’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:72:20: warning: ‘_jpeg_fill_input_buffer’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:73:17: warning: ‘_jpeg_skip_input_data’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:74:17: warning: ‘_jpeg_term_source’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:76:17: warning: ‘_jpeg_init_destination’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:77:20: warning: ‘_jpeg_empty_output_buffer’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:78:17: warning: ‘_jpeg_term_destination’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg.c: In function ‘_epeg_trim’:
+    src/epeg.c:1101:28: warning: variable ‘w’ set but not used [-Wunused-but-set-variable]
+    src/epeg.c: In function ‘_epeg_encode’:
+    src/epeg.c:1204:6: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    src/epeg.c:1213:7: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    src/epeg.c:1216:2: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    src/epeg.c:1218:2: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    src/epeg.c:1220:2: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    src/epeg.c:1222:2: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'description_long'
+      warnings.warn(msg)
+    
+Downloading/unpacking Werkzeug>=0.7 (from flask)
+  Downloading Werkzeug-0.9.4.tar.gz (1.1MB): 1.1MB downloaded
+  Running setup.py (path:/home/kampsnigel/.venv1/build/Werkzeug/setup.py) egg_info for package Werkzeug
+    
+    warning: no files found matching '*' under directory 'werkzeug/debug/templates'
+    warning: no files found matching '*' under directory 'tests'
+    warning: no previously-included files matching '*.pyc' found under directory 'docs'
+    warning: no previously-included files matching '*.pyo' found under directory 'docs'
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'
+    warning: no previously-included files matching '*.pyo' found under directory 'tests'
+    warning: no previously-included files matching '*.pyc' found under directory 'examples'
+    warning: no previously-included files matching '*.pyo' found under directory 'examples'
+    no previously-included directories found matching 'docs/_build'
+Downloading/unpacking Jinja2>=2.4 (from flask)
+  Downloading Jinja2-2.7.2.tar.gz (378kB): 378kB downloaded
+  Running setup.py (path:/home/kampsnigel/.venv1/build/Jinja2/setup.py) egg_info for package Jinja2
+    
+    warning: no files found matching '*' under directory 'custom_fixers'
+    warning: no previously-included files matching '*' found under directory 'docs/_build'
+    warning: no previously-included files matching '*.pyc' found under directory 'jinja2'
+    warning: no previously-included files matching '*.pyc' found under directory 'docs'
+    warning: no previously-included files matching '*.pyo' found under directory 'jinja2'
+    warning: no previously-included files matching '*.pyo' found under directory 'docs'
+Downloading/unpacking itsdangerous>=0.21 (from flask)
+  Downloading itsdangerous-0.23.tar.gz (46kB): 46kB downloaded
+  Running setup.py (path:/home/kampsnigel/.venv1/build/itsdangerous/setup.py) egg_info for package itsdangerous
+    
+    warning: no previously-included files matching '*' found under directory 'docs/_build'
+Requirement already satisfied (use --upgrade to upgrade): setuptools in /home/kampsnigel/.venv1/lib/python2.7/site-packages (from waitress)
+Requirement already satisfied (use --upgrade to upgrade): cffi>=0.8 in /home/kampsnigel/.venv1/lib/python2.7/site-packages (from jpegtran-cffi)
+Downloading/unpacking markupsafe (from Jinja2>=2.4->flask)
+  Downloading MarkupSafe-0.18.tar.gz
+  Running setup.py (path:/home/kampsnigel/.venv1/build/markupsafe/setup.py) egg_info for package markupsafe
+    
+Requirement already satisfied (use --upgrade to upgrade): pycparser in /home/kampsnigel/.venv1/lib/python2.7/site-packages (from cffi>=0.8->jpegtran-cffi)
+Installing collected packages: colorama, futures, flask, flask-compress, zipstream, waitress, requests, jpegtran-cffi, Werkzeug, Jinja2, itsdangerous, markupsafe
+  Running setup.py install for colorama
+    
+  Running setup.py install for flask
+    
+    warning: no files found matching '*' under directory 'tests'
+    warning: no previously-included files matching '*.pyc' found under directory 'docs'
+    warning: no previously-included files matching '*.pyo' found under directory 'docs'
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'
+    warning: no previously-included files matching '*.pyo' found under directory 'tests'
+    warning: no previously-included files matching '*.pyc' found under directory 'examples'
+    warning: no previously-included files matching '*.pyo' found under directory 'examples'
+    no previously-included directories found matching 'docs/_build'
+    no previously-included directories found matching 'docs/_themes/.git'
+  Running setup.py install for flask-compress
+    
+  Running setup.py install for zipstream
+    
+  Running setup.py install for waitress
+    
+    Installing waitress-serve script to /home/kampsnigel/.venv1/bin
+  Running setup.py install for jpegtran-cffi
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'description_long'
+      warnings.warn(msg)
+    building '_cffi__xf0be6f8dx8aa5264d' extension
+    gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -Isrc -I/usr/include/python2.7 -c jpegtran/__pycache__/_cffi__xf0be6f8dx8aa5264d.c -o build/temp.linux-x86_64-2.7/jpegtran/__pycache__/_cffi__xf0be6f8dx8aa5264d.o
+    src/epeg_private.h:71:17: warning: ‘_jpeg_init_source’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:72:20: warning: ‘_jpeg_fill_input_buffer’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:73:17: warning: ‘_jpeg_skip_input_data’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:74:17: warning: ‘_jpeg_term_source’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:76:17: warning: ‘_jpeg_init_destination’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:77:20: warning: ‘_jpeg_empty_output_buffer’ declared ‘static’ but never defined [-Wunused-function]
+    src/epeg_private.h:78:17: warning: ‘_jpeg_term_destination’ declared ‘static’ but never defined [-Wunused-function]
+    gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -Isrc -I/usr/include/python2.7 -c src/epeg.c -o build/temp.linux-x86_64-2.7/src/epeg.o
+    src/epeg.c: In function ‘_epeg_trim’:
+    src/epeg.c:1101:28: warning: variable ‘w’ set but not used [-Wunused-but-set-variable]
+    src/epeg.c: In function ‘_epeg_encode’:
+    src/epeg.c:1204:6: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    src/epeg.c:1213:7: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    src/epeg.c:1216:2: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    src/epeg.c:1218:2: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    src/epeg.c:1220:2: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    src/epeg.c:1222:2: warning: pointer targets in passing argument 3 of ‘jpeg_write_marker’ differ in signedness [-Wpointer-sign]
+    /usr/include/jpeglib.h:1057:14: note: expected ‘const JOCTET *’ but argument is of type ‘char *’
+    gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -Isrc -I/usr/include/python2.7 -c src/transupp.c -o build/temp.linux-x86_64-2.7/src/transupp.o
+    gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -Isrc -I/usr/include/python2.7 -c src/cdjpeg.c -o build/temp.linux-x86_64-2.7/src/cdjpeg.o
+    gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro build/temp.linux-x86_64-2.7/jpegtran/__pycache__/_cffi__xf0be6f8dx8aa5264d.o build/temp.linux-x86_64-2.7/src/epeg.o build/temp.linux-x86_64-2.7/src/transupp.o build/temp.linux-x86_64-2.7/src/cdjpeg.o -ljpeg -o build/lib.linux-x86_64-2.7/_cffi__xf0be6f8dx8aa5264d.so
+    
+  Running setup.py install for Werkzeug
+    
+    warning: no files found matching '*' under directory 'werkzeug/debug/templates'
+    warning: no files found matching '*' under directory 'tests'
+    warning: no previously-included files matching '*.pyc' found under directory 'docs'
+    warning: no previously-included files matching '*.pyo' found under directory 'docs'
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'
+    warning: no previously-included files matching '*.pyo' found under directory 'tests'
+    warning: no previously-included files matching '*.pyc' found under directory 'examples'
+    warning: no previously-included files matching '*.pyo' found under directory 'examples'
+    no previously-included directories found matching 'docs/_build'
+  Running setup.py install for Jinja2
+    
+    warning: no files found matching '*' under directory 'custom_fixers'
+    warning: no previously-included files matching '*' found under directory 'docs/_build'
+    warning: no previously-included files matching '*.pyc' found under directory 'jinja2'
+    warning: no previously-included files matching '*.pyc' found under directory 'docs'
+    warning: no previously-included files matching '*.pyo' found under directory 'jinja2'
+    warning: no previously-included files matching '*.pyo' found under directory 'docs'
+  Running setup.py install for itsdangerous
+    
+    warning: no previously-included files matching '*' found under directory 'docs/_build'
+  Running setup.py install for markupsafe
+    
+    building 'markupsafe._speedups' extension
+    gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2.7 -c markupsafe/_speedups.c -o build/temp.linux-x86_64-2.7/markupsafe/_speedups.o
+    gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro build/temp.linux-x86_64-2.7/markupsafe/_speedups.o -o build/lib.linux-x86_64-2.7/markupsafe/_speedups.so
+Successfully installed colorama futures flask flask-compress zipstream waitress requests jpegtran-cffi Werkzeug Jinja2 itsdangerous markupsafe
+Cleaning up...
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ 
