@@ -30,6 +30,17 @@ If problems with no spreads.log use following:
 
 § touch ~/.config/spreads/spreads.log
 
+
+Had problems with following:
+
+apt-get -y install build-essential cython libffi-dev libjpeg8-dev liblua5.1-0\
+            libudev-dev libusb-1.0-0-dev libusb-dev nginx python2.7-dev\
+            python-pyexiv2 python-netifaces python-pip python-yaml unzip
+          
+            
+Should have used sudo apt-get
+This fixes cffi. 
+Which fi
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 My problems: 
 
