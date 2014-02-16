@@ -47,7 +47,7 @@ python setup.py install    (BY MISTAKE!!!!! no harm done i hope)
 
 § pip install git+https://github.com/gbishop/cython-hidapi.git
 
-ERROR!
+ERROR! (fails without sudo!)
 
 ImportError: No module named Cython.Distutils
     Complete output from command python setup.py egg_info:
@@ -61,6 +61,12 @@ ImportError: No module named Cython.Distutils
 
 ImportError: No module named Cython.Distutils
 
+
+§ sudo pip install git+https://github.com/gbishop/cython-hidapi.git
+
+§ mkdir -p /home/spreads/.config/spreads   (fails without sudo!)
+
+§ sudo mkdir -p /home/spreads/.config/spreads
 
 
 
