@@ -43,7 +43,6 @@ apt-get -y install build-essential cython libffi-dev libjpeg8-dev liblua5.1-0\
             
 Should have used sudo apt-get
 This fixes cffi. 
-Which fi
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 My problems: 
