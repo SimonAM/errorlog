@@ -35,6 +35,8 @@ Continued with
 
 (.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ pip install --pre pyusb
 
+still in this subfolder in the virtual environment i continue with:
+
 § pip install git+https://github.com/dreamhost/stevedore.git@0.13
 python setup.py install
 
