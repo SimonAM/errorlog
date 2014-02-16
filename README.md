@@ -27,6 +27,7 @@ CHDKPTP FOR UBUNTU X86 and X64
 
 
 Raspberry tutorial nstall spreads through:
+
 git clone https://github.com/jbaiter/spreads.git /usr/src/spreads || exit 1
 cd /usr/src/spreads || exit 1
 git checkout webplugin || exit 1
@@ -48,7 +49,7 @@ now: (.venv3)kampsnigel@nya-datorn-ubuntu:/tmp/spreads
 § deactivate
 § sudo su
 §  cat /etc/udev/rules.d/99-usb.rules 
-This means correct: GOOD ACTION=="add", SUBSYSTEM=="usb", MODE:="666"
+Following means means correct: ACTION=="add", SUBSYSTEM=="usb", MODE:="666"
 § exit
 
 ACTIVATE VIRTUAL ENVIRONMENT WITH:
