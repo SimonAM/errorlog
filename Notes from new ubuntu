@@ -1,0 +1,37 @@
+Installation following: https://github.com/DIYBookScanner/spreadpi/blob/master/delivery/scripts/10-spreads.sh
+
+virtualenv is not included in installation instructions. had to:
+
+
+As this needs pip i had to start with
+
+§ sudo apt-get -y install build-essential cython libffi-dev libjpeg8-dev liblua5.1-0\
+>             libudev-dev libusb-1.0-0-dev libusb-dev nginx python2.7-dev\
+>             python-pyexiv2 python-netifaces python-pip python-yaml unzip
+
+Continued with
+
+§ sudo pip install virtualenv
+
+§ virtualenv --no-site-packages ~/.venv1
+
+§ source ~/.venv1/bin/activate
+
+§ wget --continue https://www.assembla.com/spaces/chdkptp/documents/aDDsvQyhOr465JacwqjQYw/download/aDDsvQyhOr465JacwqjQYw -O /tmp/chdkptp.zip
+
+§ sudo unzip -d /usr/local/lib/chdkptp /tmp/chdkptp.zip
+
+§ rm -rf /tmp/chdkptp.zip
+
+§ pip install --upgrade pip (up to date) 
+
+§ pip install cffi
+
+
+
+git was not installed. Had to
+
+§ sudo apt-get install git
+
+
+
