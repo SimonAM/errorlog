@@ -26,7 +26,7 @@ CHDKPTP FOR UBUNTU X86 and X64
 § rm -rf /tmp/chdkptp.zip
 
 
-#Raspberry tutorial nstall spreads through:
+Raspberry tutorial nstall spreads through:
 git clone https://github.com/jbaiter/spreads.git /usr/src/spreads || exit 1
 cd /usr/src/spreads || exit 1
 git checkout webplugin || exit 1
