@@ -79,8 +79,11 @@ Skipping to following:
 
 § cp $DELIVERY_DIR/files/spread /etc/init.d/spread 
 
-Above fails: cp: cannot stat `/files/spread': No such file or directory
-. skipping to install spreads init script. 
+Above fails: cp: cannot stat `/files/spread': No such file or directory.
+
+skipping to 
+
+§ pip install flask-compress
 
 
 
