@@ -27,6 +27,13 @@ Continued with
 
 § pip install cffi
 
+§ sudo git clone https://github.com/jbaiter/spreads.git /usr/src/spreads
+
+§ cd /usr/src/spreads 
+
+§ sudo git checkout webplugin
+
+
 
 
 git was not installed. Had to
@@ -34,4 +41,5 @@ git was not installed. Had to
 § sudo apt-get install git
 
 
+I tried without sudo, but i needed sudo for every line in which it is noted. 
 
