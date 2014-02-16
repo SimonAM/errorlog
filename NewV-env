@@ -1,6 +1,31 @@
-(.venv3)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ python setup.py install
-running install
-running bdist_egg
-running egg_info
-writing requirements to spreads.egg-info/requires.txt
-error: spreads.egg-info/requires.txt: Permission denied
+spreads encountered an error:
+Traceback (most recent call last):
+  File "/tmp/spreads/spread", line 39, in <module>
+    cli.main()
+  File "/tmp/spreads/spreads/cli.py", line 451, in main
+    args.subcommand(config)
+  File "/tmp/spreads/spreads/cli.py", line 175, in configure
+    _set_device_target_page(config, target_page)
+  File "/tmp/spreads/spreads/cli.py", line 139, in _set_device_target_page
+    devs = plugin.get_devices(config)
+  File "/tmp/spreads/spreads/plugin.py", line 359, in get_devices
+    devices = list(driver_class.yield_devices(config['device']))
+  File "/tmp/spreads/spreadsplug/dev/chdkcamera.py", line 340, in yield_devices
+    yield cls(config, dev)
+  File "/tmp/spreads/spreadsplug/dev/chdkcamera.py", line 324, in __init__
+    super(CanonA2200CameraDevice, self).__init__(config, device)
+  File "/tmp/spreads/spreadsplug/dev/chdkcamera.py", line 94, in __init__
+    get_result=True)
+  File "/tmp/spreads/spreadsplug/dev/chdkcamera.py", line 241, in _execute_lua
+    output = self._run("{0} {1}".format(cmd, script))
+  File "/tmp/spreads/spreadsplug/dev/chdkcamera.py", line 227, in _run
+    stderr=subprocess.STDOUT)
+  File "/usr/lib/python2.7/subprocess.py", line 537, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 679, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1249, in _execute_child
+    raise child_exception
+OSError: [Errno 8] Exec format error
+
+
