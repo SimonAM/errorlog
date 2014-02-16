@@ -68,8 +68,20 @@ ImportError: No module named Cython.Distutils
 
 § sudo mkdir -p /home/spreads/.config/spreads
 
+§ cp $DELIVERY_DIR/files/config.yaml /home/spreads/.config/spreads    (FAILS!)
 
+§ sudo cp $DELIVERY_DIR/files/config.yaml /home/spreads/.config/spreads  
 
+Above fails: cp: cannot stat `/files/config.yaml': No such file or directory 
+
+Skipping
+
+§ cp $DELIVERY_DIR/files/spread /etc/init.d/spread 
+
+Above fails: cp: cannot stat `/files/spread': No such file or directory
+. skipping to install spreads init script. 
+
+Skipping
 
 
 
