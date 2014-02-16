@@ -1,4 +1,6 @@
-Note to self: 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Note to self:
 
 § virtualenv --no-site-packages ~/.nameofvirtualenv
 
@@ -22,6 +24,7 @@ At configure you should choose a2200 and no plugins to be able to capture throug
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 Other fixes
 
 If problems with no spreads.log use following: 
@@ -42,6 +45,7 @@ Should have used sudo apt-get
 This fixes cffi. 
 Which fi
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 My problems: 
 
 "§ Unzip chdkptp...", is not putting chdkptp inside virtualenv. Maby thats a problem. 
