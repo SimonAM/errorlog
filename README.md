@@ -7,20 +7,21 @@ VIRTUAL ENVIRONMENT
 
 § source ~/.nameofvirtualenv/bin/activate
 
-
 CHDKPTP FOR UBUNTU X86 and X64
 
 1. Remove old
-2. 
+
 § sudo rm -rf /usr/local/lib/chdkptp
 
 2. Download
-3. 
+
 § wget --continue https://www.assembla.com/spaces/chdkptp/documents/acLgv2yhOr44ksacwqjQWU/download/acLgv2yhOr44ksacwqjQWU -O /tmp/chdkptp.zip
 
-3. Unzip then remove
-4. 
+3. Unzip 
+
 § sudo unzip -d /usr/local/lib/chdkptp /tmp/chdkptp.zip
+
+4. Remove zip
 
 § rm -rf /tmp/chdkptp.zip
 
