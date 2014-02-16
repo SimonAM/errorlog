@@ -33,8 +33,15 @@ Continued with
 
 § sudo git checkout webplugin
 
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ pip install --pre pyusb
 
+§ pip install git+https://github.com/dreamhost/stevedore.git@0.13
+python setup.py install
 
+§ sudo pip install git+https://github.com/dreamhost/stevedore.git@0.13
+python setup.py install    (BY MISTAKE!!!!! no harm done i hope)
+
+§ sudo python setup.py install
 
 git was not installed. Had to
 
