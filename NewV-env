@@ -1,0 +1,6 @@
+(.venv3)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ python setup.py install
+running install
+running bdist_egg
+running egg_info
+writing requirements to spreads.egg-info/requires.txt
+error: spreads.egg-info/requires.txt: Permission denied
