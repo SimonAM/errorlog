@@ -361,7 +361,323 @@ Installing collected packages: colorama, futures, flask, flask-compress, zipstre
     
     building 'markupsafe._speedups' extension
     gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2.7 -c markupsafe/_speedups.c -o build/temp.linux-x86_64-2.7/markupsafe/_speedups.o
-    gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro build/temp.linux-x86_64-2.7/markupsafe/_speedups.o -o build/lib.linux-x86_64-2.7/markupsafe/_speedups.so
 Successfully installed colorama futures flask flask-compress zipstream waitress requests jpegtran-cffi Werkzeug Jinja2 itsdangerous markupsafe
 Cleaning up...
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ pip install git+https://github.com/dreamhost/stevedore.git@0.13
+Downloading/unpacking git+https://github.com/dreamhost/stevedore.git@0.13
+  Cloning https://github.com/dreamhost/stevedore.git (to 0.13) to /tmp/pip-TTHhPI-build
+  Running setup.py (path:/tmp/pip-TTHhPI-build/setup.py) egg_info for package from git+https://github.com/dreamhost/stevedore.git@0.13
+    
+    Installed /tmp/pip-TTHhPI-build/pbr-0.6-py2.7.egg
+    [pbr] Excluding argparse: Python 2.6 only dependency
+    [pbr] Processing SOURCES.txt
+    warning: LocalManifestMaker: standard file '-c' not found
+    
+    [pbr] In git context, generating filelist from git
+    warning: no files found matching 'AUTHORS'
+    warning: no files found matching 'ChangeLog'
+    warning: no previously-included files found matching '.gitreview'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no files found matching '*.html' under directory 'docs'
+    warning: no files found matching '*.css' under directory 'docs'
+    warning: no files found matching '*.js' under directory 'docs'
+    warning: no files found matching '*.png' under directory 'docs'
+    warning: no files found matching '*.py' under directory 'tests'
+Installing collected packages: stevedore
+  Running setup.py install for stevedore
+    [pbr] Excluding argparse: Python 2.6 only dependency
+    [pbr] Processing SOURCES.txt
+    warning: LocalManifestMaker: standard file '-c' not found
+    
+    [pbr] In git context, generating filelist from git
+    warning: no files found matching 'AUTHORS'
+    warning: no files found matching 'ChangeLog'
+    warning: no previously-included files found matching '.gitreview'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no files found matching '*.html' under directory 'docs'
+    warning: no files found matching '*.css' under directory 'docs'
+    warning: no files found matching '*.js' under directory 'docs'
+    warning: no files found matching '*.png' under directory 'docs'
+    warning: no files found matching '*.py' under directory 'tests'
+Successfully installed stevedore
+Cleaning up...
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ python setup.py install
+running install
+running bdist_egg
+running egg_info
+creating spreads.egg-info
+error: could not create 'spreads.egg-info': Permission denied
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ sudo pip install git+https://github.com/dreamhost/stevedore.git@0.13
+Downloading/unpacking git+https://github.com/dreamhost/stevedore.git@0.13
+  Cloning https://github.com/dreamhost/stevedore.git (to 0.13) to /tmp/pip-gZk5YP-build
+  Running setup.py egg_info for package from git+https://github.com/dreamhost/stevedore.git@0.13
+    
+    Installed /tmp/pip-gZk5YP-build/pbr-0.6-py2.7.egg
+    [pbr] Excluding argparse: Python 2.6 only dependency
+    [pbr] Processing SOURCES.txt
+    warning: LocalManifestMaker: standard file '-c' not found
+    
+    [pbr] In git context, generating filelist from git
+    warning: no files found matching 'AUTHORS'
+    warning: no files found matching 'ChangeLog'
+    warning: no previously-included files found matching '.gitreview'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no files found matching '*.html' under directory 'docs'
+    warning: no files found matching '*.css' under directory 'docs'
+    warning: no files found matching '*.js' under directory 'docs'
+    warning: no files found matching '*.png' under directory 'docs'
+    warning: no files found matching '*.py' under directory 'tests'
+Installing collected packages: stevedore
+  Running setup.py install for stevedore
+    [pbr] Excluding argparse: Python 2.6 only dependency
+    [pbr] Processing SOURCES.txt
+    warning: LocalManifestMaker: standard file '-c' not found
+    
+    [pbr] In git context, generating filelist from git
+    warning: no files found matching 'AUTHORS'
+    warning: no files found matching 'ChangeLog'
+    warning: no previously-included files found matching '.gitreview'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no files found matching '*.html' under directory 'docs'
+    warning: no files found matching '*.css' under directory 'docs'
+    warning: no files found matching '*.js' under directory 'docs'
+    warning: no files found matching '*.png' under directory 'docs'
+    warning: no files found matching '*.py' under directory 'tests'
+Successfully installed stevedore
+Cleaning up...
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ sudo python setup.py install
+running install
+Checking .pth file support in /usr/local/lib/python2.7/dist-packages/
+/usr/bin/python -E -c pass
+TEST PASSED: /usr/local/lib/python2.7/dist-packages/ appears to support .pth files
+running bdist_egg
+running egg_info
+creating spreads.egg-info
+writing requirements to spreads.egg-info/requires.txt
+writing spreads.egg-info/PKG-INFO
+writing top-level names to spreads.egg-info/top_level.txt
+writing dependency_links to spreads.egg-info/dependency_links.txt
+writing entry points to spreads.egg-info/entry_points.txt
+writing manifest file 'spreads.egg-info/SOURCES.txt'
+reading manifest file 'spreads.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'spreads.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/spreads
+copying spreads/cli.py -> build/lib.linux-x86_64-2.7/spreads
+copying spreads/plugin.py -> build/lib.linux-x86_64-2.7/spreads
+copying spreads/__init__.py -> build/lib.linux-x86_64-2.7/spreads
+copying spreads/util.py -> build/lib.linux-x86_64-2.7/spreads
+copying spreads/workflow.py -> build/lib.linux-x86_64-2.7/spreads
+creating build/lib.linux-x86_64-2.7/spreads/vendor
+copying spreads/vendor/pathlib.py -> build/lib.linux-x86_64-2.7/spreads/vendor
+copying spreads/vendor/__init__.py -> build/lib.linux-x86_64-2.7/spreads/vendor
+copying spreads/vendor/confit.py -> build/lib.linux-x86_64-2.7/spreads/vendor
+creating build/lib.linux-x86_64-2.7/spreadsplug
+copying spreadsplug/tesseract.py -> build/lib.linux-x86_64-2.7/spreadsplug
+copying spreadsplug/pdfbeads.py -> build/lib.linux-x86_64-2.7/spreadsplug
+copying spreadsplug/djvubind.py -> build/lib.linux-x86_64-2.7/spreadsplug
+copying spreadsplug/hidtrigger.py -> build/lib.linux-x86_64-2.7/spreadsplug
+copying spreadsplug/scantailor.py -> build/lib.linux-x86_64-2.7/spreadsplug
+copying spreadsplug/__init__.py -> build/lib.linux-x86_64-2.7/spreadsplug
+copying spreadsplug/intervaltrigger.py -> build/lib.linux-x86_64-2.7/spreadsplug
+copying spreadsplug/autorotate.py -> build/lib.linux-x86_64-2.7/spreadsplug
+creating build/lib.linux-x86_64-2.7/spreadsplug/dev
+copying spreadsplug/dev/__init__.py -> build/lib.linux-x86_64-2.7/spreadsplug/dev
+copying spreadsplug/dev/chdkcamera.py -> build/lib.linux-x86_64-2.7/spreadsplug/dev
+creating build/lib.linux-x86_64-2.7/spreadsplug/gui
+copying spreadsplug/gui/gui_rc.py -> build/lib.linux-x86_64-2.7/spreadsplug/gui
+copying spreadsplug/gui/gui.py -> build/lib.linux-x86_64-2.7/spreadsplug/gui
+copying spreadsplug/gui/__init__.py -> build/lib.linux-x86_64-2.7/spreadsplug/gui
+creating build/lib.linux-x86_64-2.7/spreadsplug/web
+copying spreadsplug/web/worker.py -> build/lib.linux-x86_64-2.7/spreadsplug/web
+copying spreadsplug/web/web.py -> build/lib.linux-x86_64-2.7/spreadsplug/web
+copying spreadsplug/web/persistence.py -> build/lib.linux-x86_64-2.7/spreadsplug/web
+copying spreadsplug/web/__init__.py -> build/lib.linux-x86_64-2.7/spreadsplug/web
+copying spreadsplug/web/util.py -> build/lib.linux-x86_64-2.7/spreadsplug/web
+copying spreads/config_default.yaml -> build/lib.linux-x86_64-2.7/spreads
+creating build/lib.linux-x86_64-2.7/spreadsplug/gui/pixmaps
+copying spreadsplug/gui/pixmaps/monk.png -> build/lib.linux-x86_64-2.7/spreadsplug/gui/pixmaps
+creating build/lib.linux-x86_64-2.7/spreadsplug/web/client
+copying spreadsplug/web/client/index.html -> build/lib.linux-x86_64-2.7/spreadsplug/web/client
+copying spreadsplug/web/client/spreads.css -> build/lib.linux-x86_64-2.7/spreadsplug/web/client
+copying spreadsplug/web/client/spreads.min.js -> build/lib.linux-x86_64-2.7/spreadsplug/web/client
+copying spreadsplug/web/client/spreads.js -> build/lib.linux-x86_64-2.7/spreadsplug/web/client
+creating build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation
+creating build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/css
+copying spreadsplug/web/client/foundation/css/foundation-icons.css -> build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/css
+creating build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/fonts
+copying spreadsplug/web/client/foundation/fonts/foundation-icons.eot -> build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/fonts
+copying spreadsplug/web/client/foundation/fonts/foundation-icons.woff -> build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/fonts
+copying spreadsplug/web/client/foundation/fonts/foundation-icons.ttf -> build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/fonts
+copying spreadsplug/web/client/foundation/fonts/foundation-icons.svg -> build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/fonts
+creating build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/js
+copying spreadsplug/web/client/foundation/js/foundation.js -> build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/js
+copying spreadsplug/web/client/foundation/js/foundation.min.js -> build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/js
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/spreadsplug
+creating build/bdist.linux-x86_64/egg/spreadsplug/dev
+copying build/lib.linux-x86_64-2.7/spreadsplug/dev/__init__.py -> build/bdist.linux-x86_64/egg/spreadsplug/dev
+copying build/lib.linux-x86_64-2.7/spreadsplug/dev/chdkcamera.py -> build/bdist.linux-x86_64/egg/spreadsplug/dev
+copying build/lib.linux-x86_64-2.7/spreadsplug/tesseract.py -> build/bdist.linux-x86_64/egg/spreadsplug
+copying build/lib.linux-x86_64-2.7/spreadsplug/pdfbeads.py -> build/bdist.linux-x86_64/egg/spreadsplug
+copying build/lib.linux-x86_64-2.7/spreadsplug/djvubind.py -> build/bdist.linux-x86_64/egg/spreadsplug
+creating build/bdist.linux-x86_64/egg/spreadsplug/web
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/worker.py -> build/bdist.linux-x86_64/egg/spreadsplug/web
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/web.py -> build/bdist.linux-x86_64/egg/spreadsplug/web
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/persistence.py -> build/bdist.linux-x86_64/egg/spreadsplug/web
+creating build/bdist.linux-x86_64/egg/spreadsplug/web/client
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/spreads.min.js -> build/bdist.linux-x86_64/egg/spreadsplug/web/client
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/index.html -> build/bdist.linux-x86_64/egg/spreadsplug/web/client
+creating build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation
+creating build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation/css
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/css/foundation-icons.css -> build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation/css
+creating build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation/js
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/js/foundation.js -> build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation/js
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/js/foundation.min.js -> build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation/js
+creating build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation/fonts
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/fonts/foundation-icons.eot -> build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation/fonts
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/fonts/foundation-icons.woff -> build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation/fonts
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/fonts/foundation-icons.ttf -> build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation/fonts
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/foundation/fonts/foundation-icons.svg -> build/bdist.linux-x86_64/egg/spreadsplug/web/client/foundation/fonts
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/spreads.js -> build/bdist.linux-x86_64/egg/spreadsplug/web/client
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/client/spreads.css -> build/bdist.linux-x86_64/egg/spreadsplug/web/client
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/__init__.py -> build/bdist.linux-x86_64/egg/spreadsplug/web
+copying build/lib.linux-x86_64-2.7/spreadsplug/web/util.py -> build/bdist.linux-x86_64/egg/spreadsplug/web
+creating build/bdist.linux-x86_64/egg/spreadsplug/gui
+copying build/lib.linux-x86_64-2.7/spreadsplug/gui/gui_rc.py -> build/bdist.linux-x86_64/egg/spreadsplug/gui
+copying build/lib.linux-x86_64-2.7/spreadsplug/gui/gui.py -> build/bdist.linux-x86_64/egg/spreadsplug/gui
+creating build/bdist.linux-x86_64/egg/spreadsplug/gui/pixmaps
+copying build/lib.linux-x86_64-2.7/spreadsplug/gui/pixmaps/monk.png -> build/bdist.linux-x86_64/egg/spreadsplug/gui/pixmaps
+copying build/lib.linux-x86_64-2.7/spreadsplug/gui/__init__.py -> build/bdist.linux-x86_64/egg/spreadsplug/gui
+copying build/lib.linux-x86_64-2.7/spreadsplug/hidtrigger.py -> build/bdist.linux-x86_64/egg/spreadsplug
+copying build/lib.linux-x86_64-2.7/spreadsplug/scantailor.py -> build/bdist.linux-x86_64/egg/spreadsplug
+copying build/lib.linux-x86_64-2.7/spreadsplug/__init__.py -> build/bdist.linux-x86_64/egg/spreadsplug
+copying build/lib.linux-x86_64-2.7/spreadsplug/intervaltrigger.py -> build/bdist.linux-x86_64/egg/spreadsplug
+copying build/lib.linux-x86_64-2.7/spreadsplug/autorotate.py -> build/bdist.linux-x86_64/egg/spreadsplug
+creating build/bdist.linux-x86_64/egg/spreads
+copying build/lib.linux-x86_64-2.7/spreads/cli.py -> build/bdist.linux-x86_64/egg/spreads
+copying build/lib.linux-x86_64-2.7/spreads/plugin.py -> build/bdist.linux-x86_64/egg/spreads
+copying build/lib.linux-x86_64-2.7/spreads/__init__.py -> build/bdist.linux-x86_64/egg/spreads
+copying build/lib.linux-x86_64-2.7/spreads/config_default.yaml -> build/bdist.linux-x86_64/egg/spreads
+creating build/bdist.linux-x86_64/egg/spreads/vendor
+copying build/lib.linux-x86_64-2.7/spreads/vendor/pathlib.py -> build/bdist.linux-x86_64/egg/spreads/vendor
+copying build/lib.linux-x86_64-2.7/spreads/vendor/__init__.py -> build/bdist.linux-x86_64/egg/spreads/vendor
+copying build/lib.linux-x86_64-2.7/spreads/vendor/confit.py -> build/bdist.linux-x86_64/egg/spreads/vendor
+copying build/lib.linux-x86_64-2.7/spreads/util.py -> build/bdist.linux-x86_64/egg/spreads
+copying build/lib.linux-x86_64-2.7/spreads/workflow.py -> build/bdist.linux-x86_64/egg/spreads
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/dev/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/dev/chdkcamera.py to chdkcamera.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/tesseract.py to tesseract.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/pdfbeads.py to pdfbeads.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/djvubind.py to djvubind.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/web/worker.py to worker.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/web/web.py to web.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/web/persistence.py to persistence.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/web/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/web/util.py to util.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/gui/gui_rc.py to gui_rc.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/gui/gui.py to gui.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/gui/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/hidtrigger.py to hidtrigger.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/scantailor.py to scantailor.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/intervaltrigger.py to intervaltrigger.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreadsplug/autorotate.py to autorotate.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreads/cli.py to cli.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreads/plugin.py to plugin.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreads/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreads/vendor/pathlib.py to pathlib.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreads/vendor/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreads/vendor/confit.py to confit.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreads/util.py to util.pyc
+byte-compiling build/bdist.linux-x86_64/egg/spreads/workflow.py to workflow.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+installing scripts to build/bdist.linux-x86_64/egg/EGG-INFO/scripts
+running install_scripts
+running build_scripts
+creating build/scripts-2.7
+copying and adjusting spread -> build/scripts-2.7
+changing mode of build/scripts-2.7/spread from 644 to 755
+creating build/bdist.linux-x86_64/egg/EGG-INFO/scripts
+copying build/scripts-2.7/spread -> build/bdist.linux-x86_64/egg/EGG-INFO/scripts
+changing mode of build/bdist.linux-x86_64/egg/EGG-INFO/scripts/spread to 755
+copying spreads.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying spreads.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying spreads.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying spreads.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying spreads.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying spreads.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+spreads.vendor.confit: module references __file__
+creating dist
+creating 'dist/spreads-0.0.0-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing spreads-0.0.0-py2.7.egg
+creating /usr/local/lib/python2.7/dist-packages/spreads-0.0.0-py2.7.egg
+Extracting spreads-0.0.0-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding spreads 0.0.0 to easy-install.pth file
+Installing spread script to /usr/local/bin
+
+Installed /usr/local/lib/python2.7/dist-packages/spreads-0.0.0-py2.7.egg
+Processing dependencies for spreads==0.0.0
+Searching for futures>=2.1.4
+Reading http://pypi.python.org/simple/futures/
+Best match: futures 2.1.6
+Downloading https://pypi.python.org/packages/source/f/futures/futures-2.1.6.tar.gz#md5=cfab9ac3cd55d6c7ddd0546a9f22f453
+Processing futures-2.1.6.tar.gz
+Running futures-2.1.6/setup.py -q bdist_egg --dist-dir /tmp/easy_install-kevZ_v/futures-2.1.6/egg-dist-tmp-AoVv9i
+Adding futures 2.1.6 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/futures-2.1.6-py2.7.egg
+Searching for colorama>=0.2.5
+Reading http://pypi.python.org/simple/colorama/
+Best match: colorama 0.2.7
+Downloading https://pypi.python.org/packages/source/c/colorama/colorama-0.2.7.zip#md5=8cfcd1edf120d957f75e49bfdc6e22dd
+Processing colorama-0.2.7.zip
+Running colorama-0.2.7/setup.py -q bdist_egg --dist-dir /tmp/easy_install-oZfYlS/colorama-0.2.7/egg-dist-tmp-gckXn2
+zip_safe flag not set; analyzing archive contents...
+Adding colorama 0.2.7 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/colorama-0.2.7-py2.7.egg
+Searching for stevedore==0.13
+Best match: stevedore 0.13
+Adding stevedore 0.13 to easy-install.pth file
+
+Using /usr/local/lib/python2.7/dist-packages
+Searching for PyYAML==3.10
+Best match: PyYAML 3.10
+Adding PyYAML 3.10 to easy-install.pth file
+
+Using /usr/lib/python2.7/dist-packages
+Finished processing dependencies for spreads==0.0.0
+(.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ pip install git+https://github.com/gbishop/cython-hidapi.git
+Downloading/unpacking git+https://github.com/gbishop/cython-hidapi.git
+  Cloning https://github.com/gbishop/cython-hidapi.git to /tmp/pip-rTmlZg-build
+  Running setup.py (path:/tmp/pip-rTmlZg-build/setup.py) egg_info for package from git+https://github.com/gbishop/cython-hidapi.git
+    Traceback (most recent call last):
+      File "<string>", line 17, in <module>
+      File "/tmp/pip-rTmlZg-build/setup.py", line 3, in <module>
+        from Cython.Distutils import build_ext
+    ImportError: No module named Cython.Distutils
+    Complete output from command python setup.py egg_info:
+    Traceback (most recent call last):
+
+  File "<string>", line 17, in <module>
+
+  File "/tmp/pip-rTmlZg-build/setup.py", line 3, in <module>
+
+    from Cython.Distutils import build_ext
+
+ImportError: No module named Cython.Distutils
+
+----------------------------------------
+Cleaning up...
+Command python setup.py egg_info failed with error code 1 in /tmp/pip-rTmlZg-build
+Storing debug log for failure in /home/kampsnigel/.pip/pip.log
 (.venv1)kampsnigel@nya-datorn-ubuntu:/usr/src/spreads$ 
