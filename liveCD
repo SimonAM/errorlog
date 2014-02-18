@@ -1,0 +1,14 @@
+Kariluomas LiveCD
+Booting with cameras connected. 
+
+$ spread configure but doesnt configure cameras nor pages. 
+
+spread restart and then interface doesnt work. 
+
+Spread restart window shuts down, i can use interface functions as long as the restart-window is up *5 sec
+
+If starting interface through 
+
+$ spread web
+
+i can go into capture mode. Activate cameras. But cant capture
