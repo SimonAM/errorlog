@@ -16,7 +16,7 @@ $ spread web
 
 i can go into capture mode. Activate cameras. But cant capture
 
-following in terminal
+following in terminal after trying to capture through spread web
 
 ubuntu@ubuntu:~$ spread web
 serving on http://0.0.0.0:5000
