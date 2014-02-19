@@ -1,7 +1,7 @@
 Kariluomas LiveCD
 Cameras doesnt need to be connected on bootup. 
 
-$ spread configure
+$ spread configure                *pages is needed, not focus.
 
 $ spread web     *lets you capture, recapture and download. But does not support pedal. 
 
@@ -13,5 +13,5 @@ $ spread capture name     so i can use the pedal. The preview is nice though, an
 
 
 
-*interface button is dependent on restart button which auto shuts down
+*interface button is dependent on restart button which auto shuts down. Terminal input is thus required. 
 
