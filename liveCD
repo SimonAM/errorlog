@@ -1,44 +1,17 @@
 Kariluomas LiveCD
-Booting with cameras connected. 
+Cameras doesnt need to be connected on bootup. 
 
-$ spread configure 
+$ spread configure
 
-Tested with both configuring and not configuring cameras. 
+$ spread web     *lets you capture, recapture and download. But does not support pedal. 
+
+I will stick to
+
+$ spread capture name     so i can use the pedal. The preview is nice though, and if i could use scan tailor directly it would also quicken up the process. 
 
 
-spread restart and then interface doesnt work. 
 
-Spread restart window shuts down, i can use interface functions as long as the restart-window is up *5 sec
 
-If starting interface through 
 
-$ spread web
+*interface button is dependent on restart button which auto shuts down
 
-i can go into capture mode. Activate cameras. But cant capture
-
-following in terminal after trying to capture through spread web or using $ spread capture home
-
-ubuntu@ubuntu:~$ spread web
-serving on http://0.0.0.0:5000
-CanonA2200CameraDevice[even]: Capture command failed.
-CanonA2200CameraDevice[odd]: Capture command failed.
-spreadsplug.web: Exception on /workflow/1/capture [POST]
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/usr/local/lib/python2.7/dist-packages/spreads-0.0.0-py2.7.egg/spreadsplug/web/web.py", line 426, in trigger_capture
-    workflow.capture(retake=('retake' in request.args))
-  File "/usr/local/lib/python2.7/dist-packages/spreads-0.0.0-py2.7.egg/spreads/workflow.py", line 194, in capture
-    check_futures_exceptions(futures)
-  File "/usr/local/lib/python2.7/dist-packages/spreads-0.0.0-py2.7.egg/spreads/util.py", line 63, in check_futures_exceptions
-    raise exc
-CHDKPTPException: ERROR: usb capture not supported
-rs_init
